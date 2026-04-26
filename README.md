@@ -1,73 +1,52 @@
-# 🧩 Flutter Kanban Board
+# 🧩 Kanban Board (Flutter)
 
-A simple and clean Kanban board built using Flutter.
-This project demonstrates how to build a dynamic task management UI using reusable widgets and state management.
-
----
-
-## 🚀 Features
-
-* Create dynamic columns
-* Add subtasks inside each column
-* Mark subtasks as completed
-* Delete subtasks with swipe (Slidable)
-* Clean and modern UI
-* Reusable widget-based architecture
+A simple Kanban-style task manager built with Flutter.
+You can create columns and manage subtasks inside each column.
 
 ---
 
-## 🏗️ Project Structure
+## ✨ Features
 
-```
+* Add dynamic columns
+* Add / complete / delete subtasks
+* Swipe to delete (Slidable)
+* Clean UI using reusable widgets
+
+---
+
+## 🛠 Tech Stack
+
+* Flutter (UI)
+* Dart (language)
+* flutter_slidable (gesture actions)
+
+---
+
+## 📁 Structure
+
+```bash
 lib/
-  kanban.dart              # Main page (state & logic)
+  kanban.dart
   widgets/
-    kanban_body.dart       # Main layout UI
-    column_widget.dart     # Column UI
-    subtask_input.dart     # Input field for tasks
-    subtask_item.dart      # Single task UI
+    kanban_body.dart
+    column_widget.dart
+    subtask_input.dart
+    subtask_item.dart
 ```
 
 ---
 
-## 💡 Concepts Used
+## ▶️ Run
 
-* Stateful & Stateless Widgets
-* ListView.builder (dynamic lists)
-* Custom reusable widgets
-* TextEditingController
-* Callback functions between widgets
-* UI separation (logic vs design)
-
----
-
-## 🎯 Why this project?
-
-This project was built to practice:
-
-* UI design in Flutter
-* Breaking large UI into smaller widgets
-* Managing dynamic data (tasks & subtasks)
-* Preparing for real-world Flutter development
-
----
-
-## 🛠️ How to Run
-
-1. Make sure Flutter is installed
-2. Run:
-
-```
+```bash
 flutter pub get
 flutter run
 ```
 
 ---
 
-## 📌 Future Improvements
+## 📌 Notes
 
-* Drag & drop between columns
-* Save data locally (SQLite / Hive)
-* Add task priorities (High / Medium / Low)
-* User authentication
-
+* State is managed using `setState`
+* UI is split into small reusable widgets
+* Data is stored in memory (no database yet)
